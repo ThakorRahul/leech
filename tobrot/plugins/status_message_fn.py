@@ -140,7 +140,7 @@ async def exec_message_f(client, message):
 
 async def upload_document_f(client, message):
     imsegd = await message.reply_text(
-        "processing ..."
+        "Processing ..."
     )
     if await AdminCheck(client, message.chat.id, message.from_user.id):
         if " " in message.text:
